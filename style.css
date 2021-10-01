@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://wallpaperaccess.com/full/497341.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.logo {
+  width: 200px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 200px;
+}
+
+.navbar {
+  width: 85%;
+  height: 15vh;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar ul li ::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #ffc107;
+  position: absolute;
+  left: 0%;
+  bottom: -5px;
+  transform:translate3d(40px);
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.text-box{
+    color: #fff;
+   position: absolute;
+    bottom: 6%;
+}
+
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color:transparent;
+    -webkit-text-stroke: 1px #fff;
+    background:url(../images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation:back 20s linear infinite;
+    margin-left: auto;
+}
+
+.text-box p{
+    font-size:50px;
+    font-weight:600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.text-box h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text-box .row{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    margin-top:30px;
+}
+.text-box a {
+    color: #fff;
+    text-decoration: none;
+    padding:10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
